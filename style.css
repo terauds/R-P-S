@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2C3E50; /* Dark blue background */
+    background-image: url('background.png'); /* Image background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF; /* White text */
+}
+
+.game-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.choices button {
+    margin: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #FFF; /* White border */
+    border-radius: 10px;
+    background-color: transparent;
+    color: #FFF; /* White text */
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.choices button:hover {
+    transform: scale(1.1);
+    border-color: #3498DB; /* Light blue border on hover */
+}
+
+.choices button:active {
+    transform: scale(1);
+}
+
+.choices button.user-selected {
+    border-color: #27AE60; /* Green border for user's choice */
+}
+
+.choices button.computer-choice {
+    border-color: #E74C3C; /* Red border for computer's choice */
+}
+
+.result p {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    font-size: 36px;
+    color: white;
+}
